@@ -34,7 +34,7 @@ $ git clone https://github.com/Micalli/S.Antonio-NPS-API.git && cd api
 ```bash
 docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres
 ```
-Em seguide dê esses comandos para criar a tabela dentro do container
+Em seguida dê esses comandos para criar a tabela dentro do container
 ```bash
 #Entra no bash do container
 docker exec -it bash
