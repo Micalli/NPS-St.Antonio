@@ -21,6 +21,7 @@ import { Card } from '../../components/Card';
 import { ButtonBack } from '../../components/ButtonBack';
 import { UpdateQuestionModal } from './UpdateQuestionModal';
 import { useUpdateQuestionModalController } from './controllers/useUpdateChannelModalController';
+import { NoItens } from '../../components/NoItens';
 
 const grades = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -76,7 +77,7 @@ export function Question() {
 
   return (
     <>
-      <Title title="Canais" />
+      <Title title="Perguntas" />
       <div
         data-tooltip-id="my-tooltip"
         data-tooltip-content="Adicionar Pergunta"
@@ -88,9 +89,7 @@ export function Question() {
       </div>
       <Tooltip id="my-tooltip" className="z-10" />
       <ButtonBack />
-      {questions.length === 0 && !isPending && (
-        <div>Não foi encontrado perguntas</div>
-      )}
+      {questions.length === 0 && !isPending && <NoItens itemType="perguntas" />}
       {isPending && (
         <div className=" flex justify-center h-72  items-center">
           <Spinner classname="w-12 h-12" />

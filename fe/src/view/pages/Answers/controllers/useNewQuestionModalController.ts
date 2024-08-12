@@ -30,7 +30,6 @@ export function useNewAnswerModalController() {
       toast.success("Resposta criada com sucesso!");
       closeNewAnswersModal();
     } catch (error) {
-      console.log("🚀 ~ handleSubmit ~ error:", error);
       toast.error("Erro ao criar resposta!");
     }
   };

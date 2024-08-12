@@ -14,7 +14,7 @@ import { UpdateChannelModal } from "./UpdateChannelModal";
 import { useUpdateChannelModalController } from "./controllers/useUpdateChannelModalController";
 import { Link } from "react-router-dom";
 import { Card } from '../../components/Card';
-import { ButtonBack } from '../../components/ButtonBack';
+import { NoItens } from '../../components/NoItens';
 
 export function Channel() {
   const { channels, isPending: isLoadingChannels } = useChannelController();
@@ -52,8 +52,9 @@ export function Channel() {
         </Button>
       </div>
       <Tooltip id="my-tooltip" className="z-10" />
-      <ButtonBack />
-      {channels.length === 0 && !isLoadingChannels && <div>não tem Canal</div>}
+      {channels.length === 0 && !isLoadingChannels && (
+        <NoItens itemType="canais" />
+      )}
       {isLoadingChannels && (
         <div className=" flex justify-center h-72  items-center">
           <Spinner classname="w-12 h-12" />

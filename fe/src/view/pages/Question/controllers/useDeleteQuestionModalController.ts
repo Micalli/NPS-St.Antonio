@@ -31,7 +31,6 @@ export function useDeleteQuestionModalController() {
        toast.success("Canal deletado com sucesso!");
        closeDeleteQuestionModal();
      } catch (error) {
-       console.log("🚀 ~ handleSubmit ~ error:", error);
        toast.error("Erro ao deletar o pergunta!");
      }
    };

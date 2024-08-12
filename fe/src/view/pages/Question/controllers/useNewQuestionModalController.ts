@@ -29,7 +29,6 @@ export function useNewQuestionModalController() {
       toast.success("Pergunta criada com sucesso!");
       closeNewQuestionModal();
     } catch (error) {
-      console.log("🚀 ~ handleSubmit ~ error:", error);
       toast.error("Erro ao criar pergunta!");
     }
   };

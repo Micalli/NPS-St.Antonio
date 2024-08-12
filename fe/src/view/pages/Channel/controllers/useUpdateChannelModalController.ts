@@ -37,7 +37,6 @@ export function useUpdateChannelModalController() {
       toast.success("Canal editado com sucesso!");
       closeUpdateChannelModal();
     } catch (error) {
-      console.log("🚀 ~ handleSubmit ~ error:", error);
       toast.error("Erro ao editar o canal!");
     }
   };

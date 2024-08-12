@@ -7,8 +7,8 @@ import { RateQuestionParams } from "../../../../app/services/QuestionService/rat
 
 export function useFeedbackQuestionModalController() {
   const { closeFeedbackQuestionModal } = useModals();
-  const [questionNote, setQuestionNote] = useState<any>();
-  const [ratedQuestionId, setRatedQuestionId] = useState<any>();
+  const [questionNote, setQuestionNote] = useState<string>();
+  const [ratedQuestionId, setRatedQuestionId] = useState<string>();
   const [gradedQuestion, setGradedQuestion] = useState<any>();
 
 
@@ -43,7 +43,6 @@ export function useFeedbackQuestionModalController() {
        closeFeedbackQuestionModal()
 
      } catch (error) {
-       console.log("🚀 ~ handleSubmit ~ error:", error);
        toast.error("Erro ao avaliar pergunta!");
      }
    };

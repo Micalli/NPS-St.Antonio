@@ -27,7 +27,6 @@ export function useDeleteAnswerModalController() {
        toast.success("Resposta deletado com sucesso!");
        closeDeleteAnswersModal();
      } catch (error) {
-       console.log("🚀 ~ handleSubmit ~ error:", error);
        toast.error("Erro ao deletar o resposta!");
      }
    };

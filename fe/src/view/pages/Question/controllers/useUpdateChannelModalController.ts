@@ -37,7 +37,6 @@ export function useUpdateQuestionModalController() {
       toast.success("Pergunta editado com sucesso!");
       closeUpdateQuestionModal();
     } catch (error) {
-      console.log("🚀 ~ handleSubmit ~ error:", error);
       toast.error("Erro ao editar o Pergunta!");
     }
   };

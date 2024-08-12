@@ -31,7 +31,6 @@ export function useDeleteChannelModalController() {
        toast.success("Canal deletado com sucesso!");
        closeDeleteChannelModal();
      } catch (error) {
-       console.log("🚀 ~ handleSubmit ~ error:", error);
        toast.error("Erro ao criar o canal!");
      }
    };
