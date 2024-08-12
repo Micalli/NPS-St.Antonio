@@ -23,12 +23,6 @@ Teste dado pela loja santo antonio com objetivo de fazer um NPS com canais, perg
 Crie o `.env` e seguindo o exemplo do `.env.example`
 
 
-## Prisma
-Caso queira ver o banco de dados em uma interface use o:
-```bash
-$ yarn prisma studio
-```
-
 
 
 ## Rodando a API
@@ -67,6 +61,11 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
+```
+## Prisma
+Caso queira ver o banco de dados em uma interface use o:
+```bash
+$ yarn prisma studio
 ```
 
 ## Swagger
