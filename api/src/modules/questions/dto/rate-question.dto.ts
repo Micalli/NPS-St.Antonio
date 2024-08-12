@@ -4,10 +4,9 @@ import { IsNotEmpty, IsString, IsNumber } from 'class-validator';
 export class RateQuestionDto {
   @ApiProperty({
     example: '74-1415-123',
-    required: true,
+    required: false,
   })
   @IsString()
-  @IsNotEmpty()
   note: string;
 
   @ApiProperty({
