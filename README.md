@@ -22,8 +22,11 @@ Teste dado pela loja santo antonio com objetivo de fazer um NPS com canais, perg
 ## Variável de ambiente
 Crie o `.env` e seguindo o exemplo do `.env.example`
 
+
+## Prisma
+Caso queira ver o banco de dados em uma interface use o:
 ```bash
-DATABASE_URL
+$ yarn prisma studio
 ```
 
 
@@ -31,11 +34,22 @@ DATABASE_URL
 ## Rodando a API
 #### Clone
 ```bash
-$ git clone https://github.com/Micalli/S.Antonio-NPS-API.git && S.Antonio-NPS-API
+$ git clone https://github.com/Micalli/S.Antonio-NPS-API.git && cd api
 ```
 #### Rodando PostgreSQL com Docker
 ```bash
 docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres
+```
+Em seguide dê esses comandos para criar a tabela dentro do container
+```bash
+#Entra no bash do container
+docker exec -it bash
+
+#Entra no postgres
+psql -U bash
+
+#Cria o banco
+CREATE DATABASE nomeDoBanco;
 ```
 
 #### Instalação da depedencias
@@ -73,7 +87,7 @@ Com a API rodando acesse o link [SwaggerLink(http://localhost:3000/api)](http://
 ## Rodando a API
 #### Clone
 ```bash
-$ git clone https://github.com/Micalli/S.Antonio-NPS-API.git && S.Antonio-NPS-FE
+$ git clone https://github.com/Micalli/S.Antonio-NPS-API.git && cd fe
 ```
 
 #### Instalação da depedencias
