@@ -10,7 +10,7 @@ export async function rate({grade, note, questionId}: RateQuestionParams) {
   const { data } = await httpClient.put(
     `/perguntas/avaliar/${questionId}`,
     {
-      note,
+      note: note || "",
       grade,
     }
   );

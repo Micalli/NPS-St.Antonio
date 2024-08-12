@@ -48,7 +48,7 @@ export function useFeedbackQuestionModalController() {
    };
 
   const rateAQuestion = async (data: RateQuestionParams) => {
-
+console.log('aq')
    await mutateQueryRateQuestion(data);
   };
 
