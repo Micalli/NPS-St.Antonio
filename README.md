@@ -63,8 +63,9 @@ $ yarn run start:dev
 $ yarn run start:prod
 ```
 ## Prisma
-Caso queira ver o banco de dados em uma interface use o:
+Caso queira ver o banco de dados em uma interface use os:
 ```bash
+$ yarn add -g prisma
 $ yarn prisma studio
 ```
 
